@@ -54,6 +54,15 @@ flutter:
     - images/history.png
     - images/BSRU.png
     - images/Home.png
+    - images/man.png
+    - images/company.png
+    - images/university.png
+    - images/location.png
+    - images/customer-care.png
+    - images/promotion.png
+    - images/spring-desktop-calendar-variant.png
+    - images/more.png
+    
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
