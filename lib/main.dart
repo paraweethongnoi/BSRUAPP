@@ -1,6 +1,7 @@
 import 'package:bsru/home.dart';
 import 'package:bsru/splash_screen.dart';
 import 'package:flutter/material.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -14,8 +15,7 @@ class MyApp extends StatelessWidget {
         '/': (BuildContext context) => SplashScreen(),
         '/home': (BuildContext context) => Home(),
       },
-      theme: ThemeData(
-      ),
+      theme: ThemeData(fontFamily: 'Pridi'),
     );
   }
 }
