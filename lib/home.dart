@@ -1,4 +1,3 @@
-import 'package:bsru/style/mainStyle.dart';
 import 'package:flutter/material.dart';
 import 'package:imagebutton/imagebutton.dart';
 
@@ -13,11 +12,12 @@ class _HomeState extends State<Home> {
     return Scaffold(
       body:
           // appBar: AppBar(toolbarHeight: 20,),
+
           Container(
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage('images/Home.png'),
-            fit: BoxFit.fill,
+            fit: BoxFit.cover
           ),
           // gradient: RadialGradient(
           //     center: Alignment(0, -0.55),
@@ -86,6 +86,9 @@ class _HomeState extends State<Home> {
                   )),
                 ),
               ],
+            ),
+            SizedBox(
+              height: 50,
             ),
             Expanded(
               child: SingleChildScrollView(
