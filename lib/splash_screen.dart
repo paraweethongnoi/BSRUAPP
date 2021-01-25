@@ -25,12 +25,12 @@ class _SplashScreenState extends State<SplashScreen> {
             fit: BoxFit.cover,
           ),
         ),
-        child: Center(
-          child: Image.asset(
-            'images/Logo_BSRU.png',
-            height: 200,
-          ),
-        ),
+        // child: Center(
+        //   child: Image.asset(
+        //     'images/Logo_BSRU.png',
+        //     height: 200,
+        //   ),
+        // ),
       ),
     );
   }
