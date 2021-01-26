@@ -9,210 +9,212 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      bottomNavigationBar: BottomAppBar(
-        child: Container(
-          height: 85,
-          width: 700,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('images/footer.png'),
-              fit: BoxFit.cover,
+    return SafeArea(
+          child: Scaffold(
+        bottomNavigationBar: BottomAppBar(
+          child: Container(
+            height: 85,
+            width: 700,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('images/footer.png'),
+                fit: BoxFit.cover,
+              ),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Image.asset(
+                  'images/address.png',
+                  height: 18,
+                ),
+                Text(
+                  '1061',
+                  style: TextStyle(
+                      fontSize: 9,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 1.0,
+                      fontFamily: 'Sarabun'),
+                ),
+                Text(
+                  'ซอยอิสรภาพ 15',
+                  style: TextStyle(
+                      fontSize: 9,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Sarabun'),
+                ),
+                Text(
+                  'ถนนอิสรภาพ',
+                  style: TextStyle(
+                      fontSize: 9,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Sarabun'),
+                ),
+                Text(
+                  'แขวงหิรัญรูจี',
+                  style: TextStyle(
+                      fontSize: 9,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Sarabun'),
+                ),
+                Text(
+                  'เขตธนบุรี กทม. 10600',
+                  style: TextStyle(
+                      fontSize: 9,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Sarabun'),
+                ),
+              ],
             ),
           ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+        ),
+        body:
+            // appBar: AppBar(toolbarHeight: 20,),
+
+            Container( margin: const EdgeInsets.only(
+            // left: 20.0,
+            // right: 20.0,
+            // top: 25.0,
+          ),
+             
+       
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage('images/Home.png'), fit: BoxFit.cover),
+            // gradient: RadialGradient(
+            //     center: Alignment(0, -0.55),
+            //     colors: <Color>[Colors.white, Colors.pink[100]]),
+          ),
+          child: Column(mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Image.asset(
-                'images/address.png',
-                height: 18,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10, ),
+                        child: Center(
+                          child: Image.asset(
+                            'images/bsru-1.png',
+                            width: 200,
+                          ),
+                        ),
+                      ),
+                      //
+                    ],
+                  ),
+                   Center(
+                        child: Container(
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(60.0),
+                          color: Color(0xfff6a5ec)),
+                      child: Image.asset(
+                        'images/Logo_BSRU.png',
+                        height: 108,
+                      ),
+                    )),
+                  
+                ],
               ),
-              Text(
-                '1061',
-                style: TextStyle(
-                    fontSize: 9,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 1.0,
-                    fontFamily: 'Sarabun'),
-              ),
-              Text(
-                'ซอยอิสรภาพ 15',
-                style: TextStyle(
-                    fontSize: 9,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'Sarabun'),
-              ),
-              Text(
-                'ถนนอิสรภาพ',
-                style: TextStyle(
-                    fontSize: 9,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'Sarabun'),
-              ),
-              Text(
-                'แขวงหิรัญรูจี',
-                style: TextStyle(
-                    fontSize: 9,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'Sarabun'),
-              ),
-              Text(
-                'เขตธนบุรี กทม. 10600',
-                style: TextStyle(
-                    fontSize: 9,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'Sarabun'),
+               Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            ImageButton(
+                              children: <Widget>[],
+                              width: 25,
+                              height: 25,
+                              pressedImage: Image.asset(
+                                'images/facebook.png',
+                              ),
+                              unpressedImage: Image.asset('images/facebook.png'),
+                              onTap: () {
+                                print('history');
+                              },
+                            ),
+                            SizedBox(
+                              width: 5,
+                            ),
+                            ImageButton(
+                              children: <Widget>[],
+                              width: 30,
+                              height: 30,
+                              pressedImage: Image.asset(
+                                'images/domain.png',
+                              ),
+                              unpressedImage: Image.asset('images/domain.png'),
+                              onTap: () {
+                                print('history');
+                              },
+                            ),
+                          ],
+                        ),
+                      ),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 20, right: 20),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            historyButton(),
+                            newsButton(),
+                            agencyButton(),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 20, right: 20),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            peopleButton(),
+                            studentButton(),
+                            calendarButton(),
+                          ],
+                        ),
+                      ), SizedBox(
+                        height: 20,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 20, right: 20),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            courseButton(),
+                            informationButton(),
+                            moreButton(),
+                          ],
+                        ),
+                      ),
+                       SizedBox(
+                        height: 20,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 20, right: 20),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            downloadButton(),
+                            mapButton(),
+                            contactButton(),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ],
           ),
-        ),
-      ),
-      body:
-          // appBar: AppBar(toolbarHeight: 20,),
-
-          Container( margin: const EdgeInsets.only(
-          left: 20.0,
-          right: 20.0,
-          top: 25.0,
-        ),
-           
-     
-        decoration: BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage('images/Home.png'), fit: BoxFit.cover),
-          // gradient: RadialGradient(
-          //     center: Alignment(0, -0.55),
-          //     colors: <Color>[Colors.white, Colors.pink[100]]),
-        ),
-        child: Column(mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 10, top: 10),
-                      child: Center(
-                        child: Image.asset(
-                          'images/bsru-1.png',
-                          width: 230,
-                        ),
-                      ),
-                    ),
-                    //
-                  ],
-                ),
-                 Center(
-                      child: Container(
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(60.0),
-                        color: Color(0xfff6a5ec)),
-                    child: Image.asset(
-                      'images/Logo_BSRU.png',
-                      height: 108,
-                    ),
-                  )),
-                
-              ],
-            ),
-             Padding(
-                      padding: const EdgeInsets.only(left: 8),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          ImageButton(
-                            children: <Widget>[],
-                            width: 25,
-                            height: 25,
-                            pressedImage: Image.asset(
-                              'images/facebook.png',
-                            ),
-                            unpressedImage: Image.asset('images/facebook.png'),
-                            onTap: () {
-                              print('history');
-                            },
-                          ),
-                          SizedBox(
-                            width: 5,
-                          ),
-                          ImageButton(
-                            children: <Widget>[],
-                            width: 30,
-                            height: 30,
-                            pressedImage: Image.asset(
-                              'images/domain.png',
-                            ),
-                            unpressedImage: Image.asset('images/domain.png'),
-                            onTap: () {
-                              print('history');
-                            },
-                          ),
-                        ],
-                      ),
-                    ),
-            Expanded(
-              child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 20, right: 20),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          historyButton(),
-                          newsButton(),
-                          agencyButton(),
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 20, right: 20),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          peopleButton(),
-                          studentButton(),
-                          calendarButton(),
-                        ],
-                      ),
-                    ), SizedBox(
-                      height: 20,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 20, right: 20),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          courseButton(),
-                          informationButton(),
-                          moreButton(),
-                        ],
-                      ),
-                    ),
-                     SizedBox(
-                      height: 20,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 20, right: 20),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          downloadButton(),
-                          mapButton(),
-                          contactButton(),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ],
         ),
       ),
     );
