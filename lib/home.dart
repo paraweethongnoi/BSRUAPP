@@ -83,6 +83,10 @@ class _HomeState extends State<Home> {
             children: [
               Container( width: MediaQuery.of(context).size.width,
                           decoration: BoxDecoration(color: Color(0xfff6a5ec),
+                           borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(50.0),
+            bottomRight: Radius.circular(200.0),
+          ),
             // image: DecorationImage(
             //     image: AssetImage('images/Home.png'), fit: BoxFit.cover),
            
