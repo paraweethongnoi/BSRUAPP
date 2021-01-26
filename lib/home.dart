@@ -10,12 +10,14 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-          child: Scaffold(
+      child: Scaffold(
+        backgroundColor: Colors.white,
         bottomNavigationBar: BottomAppBar(
           child: Container(
             height: 85,
             width: 700,
             decoration: BoxDecoration(
+              
               image: DecorationImage(
                 image: AssetImage('images/footer.png'),
                 fit: BoxFit.cover,
@@ -71,98 +73,98 @@ class _HomeState extends State<Home> {
         body:
             // appBar: AppBar(toolbarHeight: 20,),
 
-            Container( margin: const EdgeInsets.only(
-            // left: 20.0,
-            // right: 20.0,
-            // top: 25.0,
-          ),
-             
-       
-          
-          child: Column(mainAxisAlignment: MainAxisAlignment.start,
+            Container(
+          margin: const EdgeInsets.only(
+              // left: 20.0,
+              // right: 20.0,
+              // top: 25.0,
+              ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Container( width: MediaQuery.of(context).size.width,
-                          decoration: BoxDecoration(color: Color(0xfff6a5ec),
-                           borderRadius: BorderRadius.only(
-            bottomLeft: Radius.circular(50.0),
-            bottomRight: Radius.circular(200.0),
-          ),
-            // image: DecorationImage(
-            //     image: AssetImage('images/Home.png'), fit: BoxFit.cover),
-           
-          ),
+              Container(
+                width: MediaQuery.of(context).size.width,
+                decoration: BoxDecoration(
+                  color: Color(0xfff6a5ec),
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(20.0),
+                    bottomRight: Radius.circular(150.0),
+                  ),
+                  // image: DecorationImage(
+                  //     image: AssetImage('images/Home.png'), fit: BoxFit.cover),
+                ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                      
-                           Padding(
-                            padding: const EdgeInsets.only(left: 10, ),
-                            child: Center(
-                              child: Image.asset(
-                                'images/bsru-1.png',
-                                width: 200,
-                              ),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                            left: 10,
+                          ),
+                          child: Center(
+                            child: Image.asset(
+                              'images/bsru-1.png',
+                              width: 200,
                             ),
                           ),
-                        
+                        ),
+
                         //
                       ],
                     ),
-                     Padding(
-                       padding: const EdgeInsets.only(top: 10),
-                       child: Center(
-                            child: Container(
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(60.0),
-                              color: Color(0xfff6a5ec)),
-                          child: Image.asset(
-                            'images/Logo_BSRU.png',
-                            height: 108,
-                          ),
-                        )),
-                     ),
-                    
+                    Padding(
+                      padding: const EdgeInsets.only(top: 10),
+                      child: Center(
+                          child: Container(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(60.0),
+                            color: Color(0xfff6a5ec)),
+                        child: Image.asset(
+                          'images/Logo_BSRU.png',
+                          height: 108,
+                        ),
+                      )),
+                    ),
                   ],
                 ),
               ),
-               Padding(
-                        padding: const EdgeInsets.only(left: 8),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            ImageButton(
-                              children: <Widget>[],
-                              width: 25,
-                              height: 25,
-                              pressedImage: Image.asset(
-                                'images/facebook.png',
-                              ),
-                              unpressedImage: Image.asset('images/facebook.png'),
-                              onTap: () {
-                                print('history');
-                              },
-                            ),
-                            SizedBox(
-                              width: 5,
-                            ),
-                            ImageButton(
-                              children: <Widget>[],
-                              width: 30,
-                              height: 30,
-                              pressedImage: Image.asset(
-                                'images/domain.png',
-                              ),
-                              unpressedImage: Image.asset('images/domain.png'),
-                              onTap: () {
-                                print('history');
-                              },
-                            ),
-                          ],
-                        ),
+              Padding(
+                padding: const EdgeInsets.only(left: 8),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    ImageButton(
+                      children: <Widget>[],
+                      width: 25,
+                      height: 25,
+                      pressedImage: Image.asset(
+                        'images/facebook.png',
                       ),
+                      unpressedImage: Image.asset('images/facebook.png'),
+                      onTap: () {
+                        print('history');
+                      },
+                    ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    ImageButton(
+                      children: <Widget>[],
+                      width: 30,
+                      height: 30,
+                      pressedImage: Image.asset(
+                        'images/domain.png',
+                      ),
+                      unpressedImage: Image.asset('images/domain.png'),
+                      onTap: () {
+                        print('history');
+                      },
+                    ),
+                  ],
+                ),
+              ),
               Expanded(
                 child: SingleChildScrollView(
                   child: Column(
@@ -191,7 +193,8 @@ class _HomeState extends State<Home> {
                             calendarButton(),
                           ],
                         ),
-                      ), SizedBox(
+                      ),
+                      SizedBox(
                         height: 20,
                       ),
                       Padding(
@@ -205,7 +208,7 @@ class _HomeState extends State<Home> {
                           ],
                         ),
                       ),
-                       SizedBox(
+                      SizedBox(
                         height: 20,
                       ),
                       Padding(
