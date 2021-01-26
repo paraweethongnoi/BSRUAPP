@@ -10,85 +10,70 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      // title:  Image.asset(
-      //           'images/bsru-1.png',
-      //           width: 230,
-      //         ),
-      // actions: [ Container(decoration: BoxDecoration(
-      //       borderRadius: BorderRadius.circular(50.0),
-      //       color: Color(0xfff6a5ec)
-            
-      //     ),
-      //   child: Image.asset(
-      //             'images/Logo_BSRU.png',
-      //             width: 230,
-      //           ),
-      // ),],),
       bottomNavigationBar: BottomAppBar(
-      child: Container(
-         height: 85,
-                      width: 700,
-         decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage('images/footer.png'),
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-        child: Column( crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Image.asset(
-                                'images/address.png',
-                                height: 18,
-                              ),
-                              Text(
-                                '1061',
-                                style: TextStyle(
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.bold,
-                                    letterSpacing: 1.0,
-                                    fontFamily: 'Sarabun'),
-                              ),
-                              Text(
-                                'ซอยอิสรภาพ 15',
-                                style: TextStyle(
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: 'Sarabun'),
-                              ),
-                              Text(
-                                'ถนนอิสรภาพ',
-                                style: TextStyle(
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: 'Sarabun'),
-                              ),
-                              Text(
-                                'แขวงหิรัญรูจี',
-                                style: TextStyle(
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: 'Sarabun'),
-                              ),
-                              Text(
-                                'เขตธนบุรี กทม. 10600',
-                                style: TextStyle(
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.bold,
-                                    fontFamily: 'Sarabun'),
-                              ),
-                            ],),
+        child: Container(
+          height: 85,
+          width: 700,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('images/footer.png'),
+              fit: BoxFit.cover,
+            ),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Image.asset(
+                'images/address.png',
+                height: 18,
+              ),
+              Text(
+                '1061',
+                style: TextStyle(
+                    fontSize: 10,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 1.0,
+                    fontFamily: 'Sarabun'),
+              ),
+              Text(
+                'ซอยอิสรภาพ 15',
+                style: TextStyle(
+                    fontSize: 10,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Sarabun'),
+              ),
+              Text(
+                'ถนนอิสรภาพ',
+                style: TextStyle(
+                    fontSize: 10,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Sarabun'),
+              ),
+              Text(
+                'แขวงหิรัญรูจี',
+                style: TextStyle(
+                    fontSize: 10,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Sarabun'),
+              ),
+              Text(
+                'เขตธนบุรี กทม. 10600',
+                style: TextStyle(
+                    fontSize: 10,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Sarabun'),
+              ),
+            ],
+          ),
+        ),
       ),
-    ),
       body:
           // appBar: AppBar(toolbarHeight: 20,),
 
           Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('images/Home.png'),
-            fit: BoxFit.cover
-          ),
+              image: AssetImage('images/Home.png'), fit: BoxFit.cover),
           // gradient: RadialGradient(
           //     center: Alignment(0, -0.55),
           //     colors: <Color>[Colors.white, Colors.pink[100]]),
@@ -151,20 +136,17 @@ class _HomeState extends State<Home> {
                   padding: const EdgeInsets.only(top: 25),
                   child: Center(
                       child: Container(
-                         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(50.0),
-            color: Color(0xfff6a5ec)
-            
-          ),
-                        child: Image.asset(
-                    'images/Logo_BSRU.png',
-                    height: 130,
-                  ),
-                      )),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(50.0),
+                        color: Color(0xfff6a5ec)),
+                    child: Image.asset(
+                      'images/Logo_BSRU.png',
+                      height: 118,
+                    ),
+                  )),
                 ),
               ],
             ),
-            
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
@@ -213,7 +195,6 @@ class _HomeState extends State<Home> {
                         ],
                       ),
                     ),
-                  
                   ],
                 ),
               ),
