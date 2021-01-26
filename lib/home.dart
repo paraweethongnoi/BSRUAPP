@@ -71,8 +71,8 @@ class _HomeState extends State<Home> {
           // appBar: AppBar(toolbarHeight: 20,),
 
           Container( margin: const EdgeInsets.only(
-          // left: 20.0,
-          // right: 20.0,
+          left: 20.0,
+          right: 20.0,
           top: 25.0,
         ),
            
