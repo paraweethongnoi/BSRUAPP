@@ -30,7 +30,7 @@ class _HomeState extends State<Home> {
               Text(
                 '1061',
                 style: TextStyle(
-                    fontSize: 10,
+                    fontSize: 9,
                     fontWeight: FontWeight.bold,
                     letterSpacing: 1.0,
                     fontFamily: 'Sarabun'),
@@ -38,28 +38,28 @@ class _HomeState extends State<Home> {
               Text(
                 'ซอยอิสรภาพ 15',
                 style: TextStyle(
-                    fontSize: 10,
+                    fontSize: 9,
                     fontWeight: FontWeight.bold,
                     fontFamily: 'Sarabun'),
               ),
               Text(
                 'ถนนอิสรภาพ',
                 style: TextStyle(
-                    fontSize: 10,
+                    fontSize: 9,
                     fontWeight: FontWeight.bold,
                     fontFamily: 'Sarabun'),
               ),
               Text(
                 'แขวงหิรัญรูจี',
                 style: TextStyle(
-                    fontSize: 10,
+                    fontSize: 9,
                     fontWeight: FontWeight.bold,
                     fontFamily: 'Sarabun'),
               ),
               Text(
                 'เขตธนบุรี กทม. 10600',
                 style: TextStyle(
-                    fontSize: 10,
+                    fontSize: 9,
                     fontWeight: FontWeight.bold,
                     fontFamily: 'Sarabun'),
               ),
@@ -137,7 +137,7 @@ class _HomeState extends State<Home> {
                   child: Center(
                       child: Container(
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(50.0),
+                        borderRadius: BorderRadius.circular(60.0),
                         color: Color(0xfff6a5ec)),
                     child: Image.asset(
                       'images/Logo_BSRU.png',
@@ -152,7 +152,7 @@ class _HomeState extends State<Home> {
                 child: Column(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(left: 40, right: 40),
+                      padding: const EdgeInsets.only(left: 30, right: 30),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -163,7 +163,7 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 40, right: 40),
+                      padding: const EdgeInsets.only(left: 30, right: 30),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -174,7 +174,7 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 40, right: 40),
+                      padding: const EdgeInsets.only(left: 30, right: 30),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -185,7 +185,7 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 40, right: 40),
+                      padding: const EdgeInsets.only(left: 30, right: 30),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -209,16 +209,13 @@ class _HomeState extends State<Home> {
     return Column(
       children: [
         Container(
-          width: 80,
-          height: 85,
+          width: 90,
+          height: 95,
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage('images/buttonBG.png'),
               fit: BoxFit.cover,
             ),
-            // gradient: RadialGradient(
-            //     center: Alignment(0, -0.55),
-            //     colors: <Color>[Colors.white, Colors.pink[100]]),
           ),
           // decoration: BoxDecoration(
           //   borderRadius: BorderRadius.circular(50.0),
@@ -231,8 +228,8 @@ class _HomeState extends State<Home> {
           child: Center(
             child: ImageButton(
               children: <Widget>[],
-              width: 55,
-              height: 55,
+              width: 65,
+              height: 65,
               pressedImage: Image.asset(
                 'images/history-book.png',
               ),
@@ -246,12 +243,12 @@ class _HomeState extends State<Home> {
         Center(
             child: Text(
           'เกี่ยวกับ',
-          style: TextStyle(fontSize: 11),
+          style: TextStyle(fontSize: 12),
         )),
         Center(
             child: Text(
           'บ้านสมเด็จฯ',
-          style: TextStyle(fontSize: 11),
+          style: TextStyle(fontSize: 12),
         ))
       ],
     );
@@ -261,52 +258,8 @@ class _HomeState extends State<Home> {
     return Column(
       children: [
         Container(
-          width: 80,
-          height: 85,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('images/buttonBG.png'),
-              fit: BoxFit.cover,
-            ),
-            // gradient: RadialGradient(
-            //     center: Alignment(0, -0.55),
-            //     colors: <Color>[Colors.white, Colors.pink[100]]),
-          ),
-          child: Center(
-            child: ImageButton(
-              children: <Widget>[],
-              width: 50,
-              height: 55,
-              pressedImage: Image.asset(
-                'images/information.png',
-              ),
-              unpressedImage: Image.asset('images/information.png'),
-              onTap: () {
-                print('test');
-              },
-            ),
-          ),
-        ),
-        Center(
-            child: Text(
-          'คู่มือ',
-          style: TextStyle(fontSize: 11),
-        )),
-        Center(
-            child: Text(
-          'นักศึกษา',
-          style: TextStyle(fontSize: 11),
-        ))
-      ],
-    );
-  }
-
-  Widget peopleButton() {
-    return Column(
-      children: [
-        Container(
-          width: 80,
-          height: 85,
+          width: 90,
+          height: 95,
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage('images/buttonBG.png'),
@@ -321,6 +274,50 @@ class _HomeState extends State<Home> {
               children: <Widget>[],
               width: 60,
               height: 65,
+              pressedImage: Image.asset(
+                'images/information.png',
+              ),
+              unpressedImage: Image.asset('images/information.png'),
+              onTap: () {
+                print('test');
+              },
+            ),
+          ),
+        ),
+        Center(
+            child: Text(
+          'คู่มือ',
+          style: TextStyle(fontSize: 12),
+        )),
+        Center(
+            child: Text(
+          'นักศึกษา',
+          style: TextStyle(fontSize: 12),
+        ))
+      ],
+    );
+  }
+
+  Widget peopleButton() {
+    return Column(
+      children: [
+        Container(
+          width: 90,
+          height: 95,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('images/buttonBG.png'),
+              fit: BoxFit.cover,
+            ),
+            // gradient: RadialGradient(
+            //     center: Alignment(0, -0.55),
+            //     colors: <Color>[Colors.white, Colors.pink[100]]),
+          ),
+          child: Center(
+            child: ImageButton(
+              children: <Widget>[],
+              width: 70,
+              height: 75,
               // paddingTop: 5,
               pressedImage: Image.asset(
                 'images/person.png',
@@ -335,12 +332,12 @@ class _HomeState extends State<Home> {
         Center(
             child: Text(
           'บุคลากร',
-          style: TextStyle(fontSize: 11),
+          style: TextStyle(fontSize: 12),
         )),
         Center(
             child: Text(
           '',
-          style: TextStyle(fontSize: 11),
+          style: TextStyle(fontSize: 12),
         )),
       ],
     );
@@ -350,8 +347,8 @@ class _HomeState extends State<Home> {
     return Column(
       children: [
         Container(
-          width: 80,
-          height: 85,
+          width: 90,
+          height: 95,
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage('images/buttonBG.png'),
@@ -373,8 +370,8 @@ class _HomeState extends State<Home> {
           child: Center(
             child: ImageButton(
               children: <Widget>[],
-              width: 50,
-              height: 55,
+              width: 60,
+              height: 65,
               // paddingTop: 5,
               pressedImage: Image.asset(
                 'images/penitentiary.png',
@@ -392,12 +389,12 @@ class _HomeState extends State<Home> {
         Center(
             child: Text(
           'หน่วยงาน',
-          style: TextStyle(fontSize: 11),
+          style: TextStyle(fontSize: 12),
         )),
         Center(
             child: Text(
           '',
-          style: TextStyle(fontSize: 11),
+          style: TextStyle(fontSize: 12),
         ))
       ],
     );
@@ -407,8 +404,8 @@ class _HomeState extends State<Home> {
     return Column(
       children: [
         Container(
-          width: 80,
-          height: 85,
+          width: 90,
+          height: 95,
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage('images/buttonBG.png'),
@@ -429,8 +426,8 @@ class _HomeState extends State<Home> {
           child: Center(
             child: ImageButton(
               children: <Widget>[],
-              width: 50,
-              height: 55,
+              width: 60,
+              height: 65,
               // paddingTop: 5,
               pressedImage: Image.asset(
                 'images/22.png',
@@ -445,12 +442,12 @@ class _HomeState extends State<Home> {
         Center(
             child: Text(
           'หลักสูตร',
-          style: TextStyle(fontSize: 11),
+          style: TextStyle(fontSize: 12),
         )),
         Center(
             child: Text(
           'ที่เปิดสอน',
-          style: TextStyle(fontSize: 11),
+          style: TextStyle(fontSize: 12),
         )),
       ],
     );
@@ -460,8 +457,8 @@ class _HomeState extends State<Home> {
     return Column(
       children: [
         Container(
-          width: 80,
-          height: 85,
+          width: 90,
+          height: 95,
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage('images/buttonBG.png'),
@@ -482,8 +479,8 @@ class _HomeState extends State<Home> {
           child: Center(
             child: ImageButton(
               children: <Widget>[],
-              width: 55,
-              height: 45,
+              width: 65,
+              height: 55,
               // paddingTop: 5,
               pressedImage: Image.asset(
                 'images/map.png',
@@ -498,7 +495,7 @@ class _HomeState extends State<Home> {
         Center(
             child: Text(
           'แผนที่ มบส.',
-          style: TextStyle(fontSize: 11),
+          style: TextStyle(fontSize: 12),
         ))
       ],
     );
@@ -508,216 +505,8 @@ class _HomeState extends State<Home> {
     return Column(
       children: [
         Container(
-          width: 80,
-          height: 85,
-          // decoration: BoxDecoration(
-          //   borderRadius: BorderRadius.circular(50.0),
-          //   color: Colors.indigo.shade50,
-          //   gradient: LinearGradient(
-          //       begin: Alignment(0, 0),
-          //       end: Alignment(0.5, 0.5),
-          //       colors: <Color>[Color(0xfff6a5ec), Color(0xffffdc53)]),
-          // ),
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('images/buttonBG.png'),
-              fit: BoxFit.cover,
-            ),
-            // gradient: RadialGradient(
-            //     center: Alignment(0, -0.55),
-            //     colors: <Color>[Colors.white, Colors.pink[100]]),
-          ),
-          child: Center(
-            child: ImageButton(
-              children: <Widget>[],
-              width: 50,
-              height: 55,
-              // paddingTop: 5,
-              pressedImage: Image.asset(
-                'images/contact.png',
-              ),
-              unpressedImage: Image.asset('images/contact.png'),
-              onTap: () {
-                print('test');
-              },
-            ),
-          ),
-        ),
-        Center(
-            child: Text(
-          'ติดต่อ มบส.',
-          style: TextStyle(fontSize: 11),
-        ))
-      ],
-    );
-  }
-
-  Widget newsButton() {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Container(
-          width: 80,
-          height: 85,
-          // decoration: BoxDecoration(
-          //   borderRadius: BorderRadius.circular(50.0),
-          //   color: Colors.indigo.shade50,
-          //   gradient: LinearGradient(
-          //       begin: Alignment(0, 0),
-          //       end: Alignment(0.5, 0.5),
-          //       colors: <Color>[Color(0xfff6a5ec), Color(0xffffdc53)]),
-          // ),
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('images/buttonBG.png'),
-              fit: BoxFit.cover,
-            ),
-            // gradient: RadialGradient(
-            //     center: Alignment(0, -0.55),
-            //     colors: <Color>[Colors.white, Colors.pink[100]]),
-          ),
-          child: Center(
-            child: ImageButton(
-              children: <Widget>[],
-              width: 50,
-              height: 55,
-              // paddingTop: 5,
-              pressedImage: Image.asset(
-                'images/news.png',
-              ),
-              unpressedImage: Image.asset('images/news.png'),
-              onTap: () {
-                print('test');
-              },
-            ),
-          ),
-        ),
-        Center(
-            child: Text(
-          'ข่าวสาร',
-          style: TextStyle(fontSize: 11),
-        )),
-        Center(
-            child: Text(
-          'กิจกรรม',
-          style: TextStyle(fontSize: 11),
-        )),
-      ],
-    );
-  }
-
-  Widget calendarButton() {
-    return Column(
-      children: [
-        Container(
-          width: 80,
-          height: 85,
-          // decoration: BoxDecoration(
-          //   borderRadius: BorderRadius.circular(50.0),
-          //   color: Colors.indigo.shade50,
-          //   gradient: LinearGradient(
-          //       begin: Alignment(0, 0),
-          //       end: Alignment(0.5, 0.5),
-          //       colors: <Color>[Color(0xfff6a5ec), Color(0xffffdc53)]),
-          // ),
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('images/buttonBG.png'),
-              fit: BoxFit.cover,
-            ),
-            // gradient: RadialGradient(
-            //     center: Alignment(0, -0.55),
-            //     colors: <Color>[Colors.white, Colors.pink[100]]),
-          ),
-          child: Center(
-            child: ImageButton(
-              children: <Widget>[],
-              width: 50,
-              height: 55,
-              // paddingTop: 5,
-              pressedImage: Image.asset(
-                'images/schedule.png',
-              ),
-              unpressedImage: Image.asset('images/schedule.png'),
-              onTap: () {
-                print('test');
-              },
-            ),
-          ),
-        ),
-        Center(
-            child: Text(
-          'ปฏิทินกิจกรรม',
-          style: TextStyle(fontSize: 11),
-        )),
-        Center(
-            child: Text(
-          'ปฏิทินวิชาการ',
-          style: TextStyle(fontSize: 11),
-        )),
-      ],
-    );
-  }
-
-  Widget moreButton() {
-    return Column(
-      children: [
-        Container(
-          width: 80,
-          height: 85,
-          // decoration: BoxDecoration(
-          //   borderRadius: BorderRadius.circular(50.0),
-          //   color: Colors.indigo.shade50,
-          //   gradient: LinearGradient(
-          //       begin: Alignment(0, 0),
-          //       end: Alignment(0.5, 0.5),
-          //       colors: <Color>[Color(0xfff6a5ec), Color(0xffffdc53)]),
-          // ),
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('images/buttonBG.png'),
-              fit: BoxFit.cover,
-            ),
-            // gradient: RadialGradient(
-            //     center: Alignment(0, -0.55),
-            //     colors: <Color>[Colors.white, Colors.pink[100]]),
-          ),
-          child: Center(
-            child: ImageButton(
-              children: <Widget>[],
-              width: 50,
-              height: 55,
-              // paddingTop: 5,
-              pressedImage: Image.asset(
-                'images/66.png',
-              ),
-              unpressedImage: Image.asset('images/66.png'),
-              onTap: () {
-                print('test');
-              },
-            ),
-          ),
-        ),
-        Center(
-            child: Text(
-          'ระบบสารสนเทศ',
-          style: TextStyle(fontSize: 11),
-        )),
-        Center(
-            child: Text(
-          '',
-          style: TextStyle(fontSize: 11),
-        )),
-      ],
-    );
-  }
-
-  Widget studentButton() {
-    return Column(
-      children: [
-        Container(
-          width: 80,
-          height: 85,
+          width: 90,
+          height: 95,
           // decoration: BoxDecoration(
           //   borderRadius: BorderRadius.circular(50.0),
           //   color: Colors.indigo.shade50,
@@ -742,9 +531,9 @@ class _HomeState extends State<Home> {
               height: 65,
               // paddingTop: 5,
               pressedImage: Image.asset(
-                'images/employee.png',
+                'images/contact.png',
               ),
-              unpressedImage: Image.asset('images/employee.png'),
+              unpressedImage: Image.asset('images/contact.png'),
               onTap: () {
                 print('test');
               },
@@ -753,25 +542,20 @@ class _HomeState extends State<Home> {
         ),
         Center(
             child: Text(
-          'นักศึกษา',
-          style: TextStyle(fontSize: 11),
-        )),
-        Center(
-            child: Text(
-          '',
-          style: TextStyle(fontSize: 11),
-        )),
+          'ติดต่อ มบส.',
+          style: TextStyle(fontSize: 12),
+        ))
       ],
     );
   }
 
-  Widget downloadButton() {
+  Widget newsButton() {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
-          width: 80,
-          height: 85,
+          width: 90,
+          height: 95,
           // decoration: BoxDecoration(
           //   borderRadius: BorderRadius.circular(50.0),
           //   color: Colors.indigo.shade50,
@@ -792,8 +576,221 @@ class _HomeState extends State<Home> {
           child: Center(
             child: ImageButton(
               children: <Widget>[],
-              width: 45,
-              height: 55,
+              width: 60,
+              height: 65,
+              // paddingTop: 5,
+              pressedImage: Image.asset(
+                'images/news.png',
+              ),
+              unpressedImage: Image.asset('images/news.png'),
+              onTap: () {
+                print('test');
+              },
+            ),
+          ),
+        ),
+        Center(
+            child: Text(
+          'ข่าวสาร',
+          style: TextStyle(fontSize: 12),
+        )),
+        Center(
+            child: Text(
+          'กิจกรรม',
+          style: TextStyle(fontSize: 12),
+        )),
+      ],
+    );
+  }
+
+  Widget calendarButton() {
+    return Column(
+      children: [
+        Container(
+          width: 90,
+          height: 95,
+          // decoration: BoxDecoration(
+          //   borderRadius: BorderRadius.circular(50.0),
+          //   color: Colors.indigo.shade50,
+          //   gradient: LinearGradient(
+          //       begin: Alignment(0, 0),
+          //       end: Alignment(0.5, 0.5),
+          //       colors: <Color>[Color(0xfff6a5ec), Color(0xffffdc53)]),
+          // ),
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('images/buttonBG.png'),
+              fit: BoxFit.cover,
+            ),
+            // gradient: RadialGradient(
+            //     center: Alignment(0, -0.55),
+            //     colors: <Color>[Colors.white, Colors.pink[100]]),
+          ),
+          child: Center(
+            child: ImageButton(
+              children: <Widget>[],
+              width: 60,
+              height: 65,
+              // paddingTop: 5,
+              pressedImage: Image.asset(
+                'images/schedule.png',
+              ),
+              unpressedImage: Image.asset('images/schedule.png'),
+              onTap: () {
+                print('test');
+              },
+            ),
+          ),
+        ),
+        Center(
+            child: Text(
+          'ปฏิทินกิจกรรม',
+          style: TextStyle(fontSize: 12),
+        )),
+        Center(
+            child: Text(
+          'ปฏิทินวิชาการ',
+          style: TextStyle(fontSize: 12),
+        )),
+      ],
+    );
+  }
+
+  Widget moreButton() {
+    return Column(
+      children: [
+        Container(
+          width: 90,
+          height: 95,
+          // decoration: BoxDecoration(
+          //   borderRadius: BorderRadius.circular(50.0),
+          //   color: Colors.indigo.shade50,
+          //   gradient: LinearGradient(
+          //       begin: Alignment(0, 0),
+          //       end: Alignment(0.5, 0.5),
+          //       colors: <Color>[Color(0xfff6a5ec), Color(0xffffdc53)]),
+          // ),
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('images/buttonBG.png'),
+              fit: BoxFit.cover,
+            ),
+            // gradient: RadialGradient(
+            //     center: Alignment(0, -0.55),
+            //     colors: <Color>[Colors.white, Colors.pink[100]]),
+          ),
+          child: Center(
+            child: ImageButton(
+              children: <Widget>[],
+              width: 60,
+              height: 65,
+              // paddingTop: 5,
+              pressedImage: Image.asset(
+                'images/66.png',
+              ),
+              unpressedImage: Image.asset('images/66.png'),
+              onTap: () {
+                print('test');
+              },
+            ),
+          ),
+        ),
+        Center(
+            child: Text(
+          'ระบบสารสนเทศ',
+          style: TextStyle(fontSize: 12),
+        )),
+        Center(
+            child: Text(
+          '',
+          style: TextStyle(fontSize: 12),
+        )),
+      ],
+    );
+  }
+
+  Widget studentButton() {
+    return Column(
+      children: [
+        Container(
+          width: 90,
+          height: 95,
+          // decoration: BoxDecoration(
+          //   borderRadius: BorderRadius.circular(50.0),
+          //   color: Colors.indigo.shade50,
+          //   gradient: LinearGradient(
+          //       begin: Alignment(0, 0),
+          //       end: Alignment(0.5, 0.5),
+          //       colors: <Color>[Color(0xfff6a5ec), Color(0xffffdc53)]),
+          // ),
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('images/buttonBG.png'),
+              fit: BoxFit.cover,
+            ),
+            // gradient: RadialGradient(
+            //     center: Alignment(0, -0.55),
+            //     colors: <Color>[Colors.white, Colors.pink[100]]),
+          ),
+          child: Center(
+            child: ImageButton(
+              children: <Widget>[],
+              width: 70,
+              height: 75,
+              // paddingTop: 5,
+              pressedImage: Image.asset(
+                'images/employee.png',
+              ),
+              unpressedImage: Image.asset('images/employee.png'),
+              onTap: () {
+                print('test');
+              },
+            ),
+          ),
+        ),
+        Center(
+            child: Text(
+          'นักศึกษา',
+          style: TextStyle(fontSize: 12),
+        )),
+        Center(
+            child: Text(
+          '',
+          style: TextStyle(fontSize: 12),
+        )),
+      ],
+    );
+  }
+
+  Widget downloadButton() {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Container(
+          width: 90,
+          height: 95,
+          // decoration: BoxDecoration(
+          //   borderRadius: BorderRadius.circular(50.0),
+          //   color: Colors.indigo.shade50,
+          //   gradient: LinearGradient(
+          //       begin: Alignment(0, 0),
+          //       end: Alignment(0.5, 0.5),
+          //       colors: <Color>[Color(0xfff6a5ec), Color(0xffffdc53)]),
+          // ),
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('images/buttonBG.png'),
+              fit: BoxFit.cover,
+            ),
+            // gradient: RadialGradient(
+            //     center: Alignment(0, -0.55),
+            //     colors: <Color>[Colors.white, Colors.pink[100]]),
+          ),
+          child: Center(
+            child: ImageButton(
+              children: <Widget>[],
+              width: 55,
+              height: 65,
               pressedImage: Image.asset(
                 'images/file.png',
               ),
@@ -807,7 +804,7 @@ class _HomeState extends State<Home> {
         Center(
             child: Text(
           'ดาวน์โหลดเอกสาร',
-          style: TextStyle(fontSize: 11),
+          style: TextStyle(fontSize: 12),
         )),
       ],
     );
