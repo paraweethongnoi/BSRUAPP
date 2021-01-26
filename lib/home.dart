@@ -70,7 +70,13 @@ class _HomeState extends State<Home> {
       body:
           // appBar: AppBar(toolbarHeight: 20,),
 
-          Container(
+          Container( margin: const EdgeInsets.only(
+          // left: 20.0,
+          // right: 20.0,
+          top: 25.0,
+        ),
+           
+     
         decoration: BoxDecoration(
           image: DecorationImage(
               image: AssetImage('images/Home.png'), fit: BoxFit.cover),
@@ -78,7 +84,7 @@ class _HomeState extends State<Home> {
           //     center: Alignment(0, -0.55),
           //     colors: <Color>[Colors.white, Colors.pink[100]]),
         ),
-        child: Column(
+        child: Column(mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -87,7 +93,7 @@ class _HomeState extends State<Home> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(left: 10, top: 20),
+                      padding: const EdgeInsets.only(left: 10, top: 10),
                       child: Center(
                         child: Image.asset(
                           'images/bsru-1.png',
@@ -95,8 +101,24 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 20, left: 8),
+                    //
+                  ],
+                ),
+                 Center(
+                      child: Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(60.0),
+                        color: Color(0xfff6a5ec)),
+                    child: Image.asset(
+                      'images/Logo_BSRU.png',
+                      height: 108,
+                    ),
+                  )),
+                
+              ],
+            ),
+             Padding(
+                      padding: const EdgeInsets.only(left: 8),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -130,29 +152,12 @@ class _HomeState extends State<Home> {
                         ],
                       ),
                     ),
-                  ],
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 25),
-                  child: Center(
-                      child: Container(
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(60.0),
-                        color: Color(0xfff6a5ec)),
-                    child: Image.asset(
-                      'images/Logo_BSRU.png',
-                      height: 118,
-                    ),
-                  )),
-                ),
-              ],
-            ),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(left: 30, right: 30),
+                      padding: const EdgeInsets.only(left: 20, right: 20),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -162,8 +167,11 @@ class _HomeState extends State<Home> {
                         ],
                       ),
                     ),
+                    SizedBox(
+                      height: 20,
+                    ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 30, right: 30),
+                      padding: const EdgeInsets.only(left: 20, right: 20),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -172,9 +180,11 @@ class _HomeState extends State<Home> {
                           calendarButton(),
                         ],
                       ),
+                    ), SizedBox(
+                      height: 20,
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 30, right: 30),
+                      padding: const EdgeInsets.only(left: 20, right: 20),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -184,8 +194,11 @@ class _HomeState extends State<Home> {
                         ],
                       ),
                     ),
+                     SizedBox(
+                      height: 20,
+                    ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 30, right: 30),
+                      padding: const EdgeInsets.only(left: 20, right: 20),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
