@@ -78,45 +78,51 @@ class _HomeState extends State<Home> {
           ),
              
        
-          decoration: BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage('images/Home.png'), fit: BoxFit.cover),
-            // gradient: RadialGradient(
-            //     center: Alignment(0, -0.55),
-            //     colors: <Color>[Colors.white, Colors.pink[100]]),
-          ),
+          
           child: Column(mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 10, ),
-                        child: Center(
-                          child: Image.asset(
-                            'images/bsru-1.png',
-                            width: 200,
+              Container( width: MediaQuery.of(context).size.width,
+                          decoration: BoxDecoration(color: Color(0xfff6a5ec),
+            // image: DecorationImage(
+            //     image: AssetImage('images/Home.png'), fit: BoxFit.cover),
+           
+          ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                      
+                           Padding(
+                            padding: const EdgeInsets.only(left: 10, ),
+                            child: Center(
+                              child: Image.asset(
+                                'images/bsru-1.png',
+                                width: 200,
+                              ),
+                            ),
                           ),
-                        ),
-                      ),
-                      //
-                    ],
-                  ),
-                   Center(
-                        child: Container(
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(60.0),
-                          color: Color(0xfff6a5ec)),
-                      child: Image.asset(
-                        'images/Logo_BSRU.png',
-                        height: 108,
-                      ),
-                    )),
-                  
-                ],
+                        
+                        //
+                      ],
+                    ),
+                     Padding(
+                       padding: const EdgeInsets.only(top: 10),
+                       child: Center(
+                            child: Container(
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(60.0),
+                              color: Color(0xfff6a5ec)),
+                          child: Image.asset(
+                            'images/Logo_BSRU.png',
+                            height: 108,
+                          ),
+                        )),
+                     ),
+                    
+                  ],
+                ),
               ),
                Padding(
                         padding: const EdgeInsets.only(left: 8),
